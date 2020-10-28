@@ -1,0 +1,56 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.carousel-container {
+  margin: 1rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 5px 5px 5px 2px lightgrey;
+}
+
+.images-box {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.images-box img {
+  height: 3rem;
+  width: 9rem;
+  object-fit: contain;
+  transition: transform 0.2s;
+}
+
+.images-box img:hover {
+  transform: scale(1.3);
+}
+
+@media only screen and (max-width: 900px) {
+  .images-box img {
+    width: 4rem;
+    object-fit: contain;
+  }
+  .slide6,
+  .slide5,
+  .slide4 {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+  .images-box img {
+    width: 8rem;
+    object-fit: contain;
+  }
+  .slide6 {
+    display: none;
+  }
+}
